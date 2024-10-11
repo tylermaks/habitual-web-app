@@ -5,6 +5,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Dark theme primary colors */
+  --primary-a0: #2dd7bb;
+  --primary-a10: #56dcc2;
+  --primary-a20: #72e1ca;
+  --primary-a30: #8ae5d1;
+  --primary-a40: #a0ead9;
+  --primary-a50: #b4eee0;
+
+  /* Dark theme surface colors */
+  --surface-a0: #121212;
+  --surface-a10: #282828;
+  --surface-a20: #3f3f3f;
+  --surface-a30: #575757;
+  --surface-a40: #717171;
+  --surface-a50: #8b8b8b;
+
+  /* Dark theme mixed surface colors */
+  /* --surface-mixed-a0: #192321;
+  --surface-mixed-a10: #2e3836;
+  --surface-mixed-a20: #454d4c;
+  --surface-mixed-a30: #5d6463;
+  --surface-mixed-a40: #767c7b;
+  --surface-mixed-a50: #8f9594; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +42,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+li { 
+  cursor: pointer;
 }
 
 @layer utilities {
