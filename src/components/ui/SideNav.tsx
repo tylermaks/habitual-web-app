@@ -1,25 +1,24 @@
+import Image from "next/image"
+import ListItem from "../dashboard/ListItem"
+import CollapsibleList from "../dashboard/CollapsibleList"
+
 export default function SideNav() { 
     return ( 
-        <nav className="bg-surface-a10 w-[12.5%] p-8 flex flex-col justify-between">
+        <nav className="bg-surface-a10 w-[12.5%] px-5 py-8 flex flex-col justify-between">
             <div>
                 <div className="mb-8">
                     <p className="text-white">Logo</p>
                 </div>
-                <ul className="text-white flex flex-col gap-4">
-                    <li>Dashboard</li>
-                    <li>
-                        <p className="mb-3">Habits</p>
-                        <ul className="flex flex-col gap-3">
-                            <li className="text-sm pl-5">Get in shape</li>
-                            <li className="text-sm pl-5">Make more money</li>
-                            <li className="text-sm pl-5">Spend more time with friends</li>
-                        </ul>
-                    </li>
-                    <li>Tasks</li>
-                    <li>Other</li>
+                <ul className="text-white flex flex-col gap-5">
+                    <ListItem label="Dashboard" img="dashboard-icon.svg" />
+                    <ListItem label="Journal" img="journal-icon.svg" />
+                    <CollapsibleList />
+                    <ListItem label="Tasks" img="tasks-icon.svg" />
+                    <ListItem label="Other" img="ellipse-icon.svg" />
                 </ul>
             </div>
-            <div>
+            <div className="flex gap-2">
+                <Image src="/images/cog-icon.svg" height={18} width={18} alt="Cog icon" />
                 <p className="text-white">Signout</p>
             </div>
         </nav>
