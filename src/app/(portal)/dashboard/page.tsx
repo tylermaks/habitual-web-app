@@ -1,4 +1,5 @@
-import SideNav from "@/src/components/ui/SideNav"
+import HabitGrid from "@/src/components/dashboard/HabitGrid";
+
 
 export default function Dashboard(){ 
     return ( 
@@ -7,7 +8,7 @@ export default function Dashboard(){
             <div className="w-full h-64 rounded-md p-2">
                 <h2 className="uppercase tracker-widest font-semibold text-sm text-surface-a50">Annual Habit Progress</h2>
                 <div>
-                    grid component here
+                    <HabitGrid />
                 </div>
             </div>
         </main>
