@@ -9,6 +9,7 @@ export default function Dashboard(){
                 <h2 className="uppercase tracker-widest font-semibold text-sm text-surface-a50">Annual Habit Progress</h2>
                 <div>
                     <HabitGrid />
+                    
                 </div>
             </div>
         </main>
