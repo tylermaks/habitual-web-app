@@ -1,7 +1,9 @@
 import Image from "next/image";
 
-
 export default function TopNav () { 
+    const today = new Date()
+    const todayFormatted = today.toDateString()
+
     return (
         <nav className="w-full flex justify-between py-6">
             <div className="flex items-center gap-3">
@@ -11,7 +13,7 @@ export default function TopNav () {
                     height={21}
                     width={21}
                 />
-                <h1 className="text-white text-lg">Thursday, October 24</h1>
+                <h1 className="text-white text-lg">{todayFormatted}</h1>
             </div>
             
             <div className="flex items-center gap-14">

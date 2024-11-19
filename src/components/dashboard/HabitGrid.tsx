@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { start } from "repl"
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -25,8 +24,6 @@ export default function HabitGrid(){
         const date = new Date(year, 0)    
         const dayOfYear = (weekIndex * 7 ) + dayIndex
 
-        
-        
         date.setDate(dayOfYear)
 
         return date.toLocaleDateString()
@@ -141,7 +138,10 @@ export default function HabitGrid(){
             
             if (targetCell) {
                 const colorValue = Math.min(dailyProgressData[obj].habit.length * 100 + 100, 900)
-                targetCell.className = `bg-green-${colorValue} w-3 rounded-sm table-cell border-separate relative`;
+                const contributionColor = `bg-green-${colorValue}`;
+
+                console.log("COLOUR VALUE", typeof(colorValue), colorValue)
+                targetCell.className = `${contributionColor} w-3 rounded-sm table-cell border-separate relative`;
             }
         }
     }
@@ -176,10 +176,7 @@ export default function HabitGrid(){
                             </td>
                             { Array.from({length: 53}, (_, weekIndex) => {
                                 const date = getGridDate(dayIndex, weekIndex)
-                                console.log("DATE FROM COMPONENT", date)
-
                                 let contributions = 0
-                                
                                 //move this to hover component? Does it matter? 
                                 monthlyHabitData[0].dailyProgress.forEach( obj => { 
                                     if(obj.date === date) contributions =+ obj.habit.length
