@@ -1,4 +1,4 @@
-import SideNav from "@/src/components/ui/SideNav";
+import SideNav from "@/src/components/dashboard/SideNav/SideNav";
 import TopNav from "@/src/components/dashboard/TopNav";
 
 export default function PortalLayout({

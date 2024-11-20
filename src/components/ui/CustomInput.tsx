@@ -1,15 +1,16 @@
 type InputProps = { 
     label: string, 
-    name: string
+    name: string,
+    placeholder: string
 }
 
-export default function CustomInput({ label, name }: InputProps) { 
+export default function CustomInput({ label, name, placeholder }: InputProps) { 
     //add sanitization
 
     return(
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-1.5 text-sm">
             <label className="text-white" htmlFor={name}>{label}</label>
-            <input className="bg-surface-a20 border border-white rounded-md text-white p-1" type="text" name={name} id={name} />
+            <input className="bg-surface-a0 rounded-md text-white py-1.5 px-3" type="text" name={name} id={name} placeholder={placeholder} />
         </div>
     )
 }

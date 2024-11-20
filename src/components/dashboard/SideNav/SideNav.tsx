@@ -1,10 +1,10 @@
 import Image from "next/image"
-import ListItem from "../dashboard/SideNav/ListItem"
-import SidebarHabitList from "../dashboard/SideNav/SidebarHabitList"
+import ListItem from "./ListItem"
+import SidebarHabitList from "./SidebarHabitList"
 
 export default function SideNav() { 
     return ( 
-        <nav className="bg-surface-a10 w-[300px] px-4 py-6 flex flex-col gap-4 rounded-md">
+        <nav className="bg-surface-a10 w-[300px] px-4 py-6 flex flex-col gap-4 rounded-md relative">
             <div className="h-12">
                 <p className="text-white font-black tracking-widest">HABITUAL</p>
             </div>

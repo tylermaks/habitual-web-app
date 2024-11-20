@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
+import AddHabit from "./AddHabit"
 
 export default function SidebarHabitList () { 
     return ( 
@@ -15,10 +15,7 @@ export default function SidebarHabitList () {
                     height={16}
                     width={16}
                 />
-                <Link className="uppercase text-surface-a50 text-[11px] font-semibold tracking-wider" href='/habit/add-habit'>
-                    Add New Habit
-                </Link>
-                
+                <AddHabit />
             </div>
         </div>
     )
