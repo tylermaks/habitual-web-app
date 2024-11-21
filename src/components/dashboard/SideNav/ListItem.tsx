@@ -14,7 +14,7 @@ type ListItemProps = {
 export default function ListItem({ label, img, href } : ListItemProps) { 
     const currentPathName = usePathname()
     const componentPathName = label.toLowerCase()
-    const currentItemClass = currentPathName === `/${componentPathName}` ? "bg-surface-a20 rounded-md py-2" : ""
+    const currentItemClass = currentPathName === `/${componentPathName}` ? "bg-surface-a20 text-white rounded-md py-2" : ""
 
     return( 
         <li className={`flex items-center gap-2 p-2 ${currentItemClass}`}>

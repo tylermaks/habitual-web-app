@@ -7,12 +7,9 @@ export default function PortalLayout({
     children: React.ReactNode;
   }>) {
     return (
-        <div className="bg-surface-a0 min-h-screen flex p-4">
-            <SideNav />
-            <main className="px-12 w-full">
-                <TopNav />
-                {children}
-            </main>
+        <div className="min-h-screen w-full bg-gray-100">
+            <TopNav />
+            {children}
         </div>
     );
   }

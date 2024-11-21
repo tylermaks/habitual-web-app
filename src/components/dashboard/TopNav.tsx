@@ -1,21 +1,11 @@
 import Image from "next/image";
 
 export default function TopNav () { 
-    const today = new Date()
-    const todayFormatted = today.toDateString()
+
 
     return (
-        <nav className="w-full flex justify-between py-6">
-            <div className="flex items-center gap-3">
-                <Image 
-                    src="/images/calendar-icon.svg"
-                    alt="Calendar icon"
-                    height={21}
-                    width={21}
-                />
-                <h1 className="text-white text-lg">{todayFormatted}</h1>
-            </div>
-            
+        <nav className="bg-green-500 w-full flex justify-between items-center py-6 px-40">
+            <h1 className="text-2xl font-black text-white">habitual</h1>
             <div className="flex items-center gap-14">
                 <div className="cursor-pointer">
                     <Image 
@@ -35,7 +25,7 @@ export default function TopNav () {
                 </div>
                 <div className="flex gap-2 items-center cursor-pointer">
                     <div className="flex items-center justify-center rounded-full bg-surface-a10 w-8 h-8 text-white text-xs">JD</div>
-                    <p className="text-white text-sm">John Doe</p>
+                    <p className="text-sm">John Doe</p>
                 </div>
             </div>
         </nav>
