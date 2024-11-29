@@ -13,8 +13,6 @@ function StatBar({
 } : StatProps ) { 
     const nextLevel = Number(currentLevel) + 1
     const levelProgress = Math.round((currentXP/requiredXP) * 100)
-    const levelProgressWidth = "w-[" + levelProgress + "%]"
-
 
     return (
         <div className="flex">
@@ -42,7 +40,7 @@ function StatBar({
 
 export default function LevelSummary() {
     return(
-        <div className="flex flex-col gap-6 bg-white shadow-md rounded-md p-6">
+        <div className="flex flex-col gap-6 bg-white shadow-md rounded-md p-8">
             <h2 className="font-bold">Current Level</h2>
 
             <div className="flex justify-center items-center">

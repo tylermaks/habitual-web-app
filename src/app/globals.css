@@ -38,6 +38,10 @@
   }
 }
 
+h1, h2, h3, p{ 
+  color: #4e4e4e;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

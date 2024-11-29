@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import HabitForm from "../Habits/HabitForm"
+import HabitForm from "../Skills/HabitForm"
 
 export default function AddHabit() {
     const [openForm, setOpenForm] = useState<boolean>(false)
