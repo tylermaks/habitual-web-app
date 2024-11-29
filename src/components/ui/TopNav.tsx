@@ -4,7 +4,7 @@ export default function TopNav () {
 
 
     return (
-        <nav className="bg-green-500 w-full flex justify-between items-center py-6 px-40">
+        <nav className="bg-deep-gray w-full flex justify-between items-center py-3 px-40">
             <h1 className="text-2xl font-black text-white">habitual</h1>
             <div className="flex items-center gap-14">
                 <div className="cursor-pointer">

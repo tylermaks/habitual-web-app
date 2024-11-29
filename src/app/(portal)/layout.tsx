@@ -1,5 +1,4 @@
-import SideNav from "@/src/components/dashboard/SideNav/SideNav";
-import TopNav from "@/src/components/dashboard/TopNav";
+import TopNav from "@/src/components/ui/TopNav";
 
 export default function PortalLayout({
     children,
@@ -7,7 +6,7 @@ export default function PortalLayout({
     children: React.ReactNode;
   }>) {
     return (
-        <div className="min-h-screen w-full bg-gray-100">
+        <div className="min-h-screen w-full bg-off-white">
             <TopNav />
             {children}
         </div>

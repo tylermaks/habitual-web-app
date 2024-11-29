@@ -9,34 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: {
-          a0: 'var(--primary-a0)',
-          a10: 'var(--primary-a10)',
-          a20: 'var(--primary-a20)',
-          a30: 'var(--primary-a30)',
-          a40: 'var(--primary-a40)',
-          a50: 'var(--primary-a50)',
-        },
-        surface: {
-          a0: 'var(--surface-a0)',
-          a10: 'var(--surface-a10)',
-          a20: 'var(--surface-a20)',
-          a30: 'var(--surface-a30)',
-          a40: 'var(--surface-a40)',
-          a50: 'var(--surface-a50)',
-        },
-        dark: {
-          default: '#121212',  // Dark Gray Background
-          ltGray: '#E0E0E0',    // Light Gray Text
-          mdGray: '#B0B0B0',   // Medium Gray for secondary text
-          blueAcc: '#1E88E5',     // Blue Accent
-          greenAcc: '#43A047',    // Green Accent
-          redAcc: '#E53935',      // Red Accent
-          drkGray: '#333333', // Darker Gray for borders
-          muted: '#757575',     // Muted Text
-        },
+        'forest-green': '#228B22',
+        'sky-blue': '#87CEEB',
+        'golden-yellow': '#FFD700',
+        'brick-red': '#B22222',
+        'royal-purple': '#6A5ACD',
+        'off-white': '#F5F5F5',
+        'slate-gray': '#708090',
+        'neon-pink': '#FF69B4',
+        'electric-cyan': '#00FFFF',
+        'deep-gray': '#2E2E2E'
       },
     },
   },
